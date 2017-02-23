@@ -1,0 +1,141 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Sidebar" GeneratedClassName="SidebarSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AddCard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Add Card']</Value>
+    </Setting>
+    <Setting Name="CardNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_card_number</Value>
+    </Setting>
+    <Setting Name="ExpriyDate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/label_expiry_date</Value>
+    </Setting>
+    <Setting Name="CardCCV" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_cvv</Value>
+    </Setting>
+    <Setting Name="CardPIN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_pin</Value>
+    </Setting>
+    <Setting Name="AddCardButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/btn_add</Value>
+    </Setting>
+    <Setting Name="ExpiryMonth" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='06']</Value>
+    </Setting>
+    <Setting Name="ExpiryYear_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='1' and @index='0']</Value>
+    </Setting>
+    <Setting Name="ExpiryYear_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='9' and @index='2']</Value>
+    </Setting>
+    <Setting Name="OKButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/done_button</Value>
+    </Setting>
+    <Setting Name="ExpiryDatePick" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='MM - YYYY']</Value>
+    </Setting>
+    <Setting Name="MyCards" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='My Cards']</Value>
+    </Setting>
+    <Setting Name="MakeCardDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckBox[@text='Default Card' and @index='2']</Value>
+    </Setting>
+    <Setting Name="RemoveCard" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Remove Card' and @index='3']</Value>
+    </Setting>
+    <Setting Name="YesDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Yes']</Value>
+    </Setting>
+    <Setting Name="RemoveCardYes" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Yes']</Value>
+    </Setting>
+    <Setting Name="NoDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='No']</Value>
+    </Setting>
+    <Setting Name="NoRemove" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='No']</Value>
+    </Setting>
+    <Setting Name="ReportAProblem" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Report a Problem' and @index='0']</Value>
+    </Setting>
+    <Setting Name="ReportSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Subject' and @index='1']</Value>
+    </Setting>
+    <Setting Name="ReportDescribe" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Describe your problem' and @index='3']</Value>
+    </Setting>
+    <Setting Name="ReportSubmitButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Submit' and @index='4']</Value>
+    </Setting>
+    <Setting Name="RateUs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Rate us' and @index='0']</Value>
+    </Setting>
+    <Setting Name="AboutZone" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='About Zone' and @index='0']</Value>
+    </Setting>
+    <Setting Name="Share" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Share' and @index='0']</Value>
+    </Setting>
+    <Setting Name="Help" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Help' and @index='0']</Value>
+    </Setting>
+    <Setting Name="LogOut" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Log Out' and @index='0']</Value>
+    </Setting>
+    <Setting Name="Messages" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Messages' and @index='1']</Value>
+    </Setting>
+    <Setting Name="Messenger" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Messenger' and @index='1']</Value>
+    </Setting>
+    <Setting Name="WhatsApp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='WhatsApp' and @index='1']</Value>
+    </Setting>
+    <Setting Name="AccountSettings" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Settings' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SelectNetwork" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Tap To Select a Network' and @index='1']</Value>
+    </Setting>
+    <Setting Name="RechargeAmount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Recharge Amount' and @index='0']</Value>
+    </Setting>
+    <Setting Name="AccountDetails" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Account Details (Tap to Change)' and @index='0']</Value>
+    </Setting>
+    <Setting Name="QuickLaunch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">android:id/checkbox</Value>
+    </Setting>
+    <Setting Name="NetworkSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Airtel' and @index='2']</Value>
+    </Setting>
+    <Setting Name="TypeAmount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='0']</Value>
+    </Setting>
+    <Setting Name="TypeAmountOKButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='OK' and @index='1']</Value>
+    </Setting>
+    <Setting Name="TypeAmountCancelButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">android.widget.Button[@text='Cancel' and @index='0']</Value>
+    </Setting>
+    <Setting Name="DeviceBackButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.view.View[@index='2']</Value>
+    </Setting>
+    <Setting Name="RateUsValidate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='0']</Value>
+    </Setting>
+    <Setting Name="AboutUsValidate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Facebook' and @index='0']</Value>
+    </Setting>
+    <Setting Name="HelpValidate" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Help' and @index='1']</Value>
+    </Setting>
+    <Setting Name="NetworkOperator" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Network Operator' and @index='0']</Value>
+    </Setting>
+    <Setting Name="MessageDontSendButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Don't send' and @index='1']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

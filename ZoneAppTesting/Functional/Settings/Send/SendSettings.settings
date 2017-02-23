@@ -1,0 +1,117 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Send" GeneratedClassName="SendSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Send" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Send' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SendToSelfSelect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Kehinde Adeoya  ' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SendAmount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Amount' and @index='1']</Value>
+    </Setting>
+    <Setting Name="SendRemarks" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Remarks' and @index='1']</Value>
+    </Setting>
+    <Setting Name="SendNextButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='NEXT' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SendSummaryButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Next' and @index='0']</Value>
+    </Setting>
+    <Setting Name="CardPAN" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="CardPIN_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='2' and @index='0']</Value>
+    </Setting>
+    <Setting Name="CardPIN_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='0' and @index='0']</Value>
+    </Setting>
+    <Setting Name="CardPIN_3" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='1' and @index='0']</Value>
+    </Setting>
+    <Setting Name="CardPIN_4" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='1' and @index='0']</Value>
+    </Setting>
+    <Setting Name="ConfirmPassOrFail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.LinearLayout[@index='1']</Value>
+    </Setting>
+    <Setting Name="InsideSend" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@content-desc='Zone Send GoLive']</Value>
+    </Setting>
+    <Setting Name="FailedRetry" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Retry' and @index='1']</Value>
+    </Setting>
+    <Setting Name="PassedReplay" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Replay' and @index='1']</Value>
+    </Setting>
+    <Setting Name="PassFeedback" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="LoggedInUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/label_full_name</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/name</Value>
+    </Setting>
+    <Setting Name="SummaryPageFields" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView</Value>
+    </Setting>
+    <Setting Name="CardPINPad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView</Value>
+    </Setting>
+    <Setting Name="CardPassedValue" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text="</Value>
+    </Setting>
+    <Setting Name="NumberOfCards" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/card_indicator</Value>
+    </Setting>
+    <Setting Name="CardImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='0']</Value>
+    </Setting>
+    <Setting Name="AddCardButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Add Card' and @index='0']</Value>
+    </Setting>
+    <Setting Name="CardDigits" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryButton_1" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='1']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryButton_2" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Account Number' and @index='0']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Account Number' and @index='1']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryBank" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryProceedButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Proceed' and @index='2']</Value>
+    </Setting>
+    <Setting Name="BeneficiarySummaryPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="BeneficiaryConfirm" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='CONFIRM' and @index='0']</Value>
+    </Setting>
+    <Setting Name="BenficiarySummaryNameField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="SendToZoneContact" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="Search" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/ic_action_search</Value>
+    </Setting>
+    <Setting Name="SearchField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='1']</Value>
+    </Setting>
+    <Setting Name="SendQuickLaunch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@index='0' and @text='Send']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

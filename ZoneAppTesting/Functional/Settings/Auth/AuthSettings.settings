@@ -1,0 +1,87 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Auth" GeneratedClassName="AuthSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="GetStartedButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'getStartedButton')]</Value>
+    </Setting>
+    <Setting Name="GetStartedLayout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">getStarted</Value>
+    </Setting>
+    <Setting Name="AppiumServerURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://127.0.0.1:4723/wd/hub</Value>
+    </Setting>
+    <Setting Name="HTCDesire626sDevice" Type="System.String" Scope="User">
+      <Value Profile="(Default)">HT577SY03629</Value>
+    </Setting>
+    <Setting Name="ZonePackageName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp</Value>
+    </Setting>
+    <Setting Name="ZoneAppActivity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.InviteCode</Value>
+    </Setting>
+    <Setting Name="HTCDesire626sVersionNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">5.1</Value>
+    </Setting>
+    <Setting Name="ImageContainerValidation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.RelativeLayout[contains(@resource-id,'img_container')]</Value>
+    </Setting>
+    <Setting Name="PhoneNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'phoneNumber')]</Value>
+    </Setting>
+    <Setting Name="PasswordField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'password')]</Value>
+    </Setting>
+    <Setting Name="VerifyPasswordField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'verifyPassword')]</Value>
+    </Setting>
+    <Setting Name="LoginTextPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[contains(@resource-id,'have_an_acct')]</Value>
+    </Setting>
+    <Setting Name="ProceedButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'proceed')]</Value>
+    </Setting>
+    <Setting Name="InviteCodeField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'invite_code')]</Value>
+    </Setting>
+    <Setting Name="VerifyInviteButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'verifyInvite')]</Value>
+    </Setting>
+    <Setting Name="FirstNameField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'firstName')]</Value>
+    </Setting>
+    <Setting Name="LastNameField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'lastName')]</Value>
+    </Setting>
+    <Setting Name="EmailField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[contains(@resource-id,'emailField')]</Value>
+    </Setting>
+    <Setting Name="DateOfBirthField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[contains(@resource-id,'dob')]</Value>
+    </Setting>
+    <Setting Name="GenderField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[contains(@resource-id,'gender')]</Value>
+    </Setting>
+    <Setting Name="SignUpButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'signUp')]</Value>
+    </Setting>
+    <Setting Name="DatePickerYearButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'date_picker_year')]</Value>
+    </Setting>
+    <Setting Name="MonthTextView" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[contains(@resource-id,'month_text_view')]</Value>
+    </Setting>
+    <Setting Name="DoneButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/done_button</Value>
+    </Setting>
+    <Setting Name="ReEnterPasswordButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'positive')]</Value>
+    </Setting>
+    <Setting Name="ForgotPasswordButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'negative')]</Value>
+    </Setting>
+    <Setting Name="GenderSelect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[contains(@resource-id,'spinner_item')]</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

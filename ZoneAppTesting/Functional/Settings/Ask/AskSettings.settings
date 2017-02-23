@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Ask" GeneratedClassName="AskSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AskButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Ask' and @index='0']</Value>
+    </Setting>
+    <Setting Name="AskAmount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Total Amount' and @index='1']</Value>
+    </Setting>
+    <Setting Name="AskDescription" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter message and send picture' and @index='1']</Value>
+    </Setting>
+    <Setting Name="AskAddImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='0']</Value>
+    </Setting>
+    <Setting Name="AskButtonGo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='ASK' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SelectImageGallery" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1' and @text='Gallery']</Value>
+    </Setting>
+    <Setting Name="ImageViewGallery" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.view.View[@index='0']</Value>
+    </Setting>
+    <Setting Name="AskFromInside" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@content-desc='Ask n Receive GoLive']</Value>
+    </Setting>
+    <Setting Name="GlobalContactList" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="AskQuickLaunch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Ask' and @index='1']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

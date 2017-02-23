@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Topup" GeneratedClassName="TopupSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="TopupQuickLaunch" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Top-Up' and @index='3']</Value>
+    </Setting>
+    <Setting Name="Topup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Top-Up' and @index='0']</Value>
+    </Setting>
+    <Setting Name="TopupAmount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Amount' and @index='1']</Value>
+    </Setting>
+    <Setting Name="TopupNextButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Next' and @index='0']</Value>
+    </Setting>
+    <Setting Name="Search" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@content-desc='Phone Number' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SearchField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/search</Value>
+    </Setting>
+    <Setting Name="PhoneTopupImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='1']</Value>
+    </Setting>
+    <Setting Name="PhoneTopupClick" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Phone Number' and @index='0']</Value>
+    </Setting>
+    <Setting Name="PhoneNumberField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='0']</Value>
+    </Setting>
+    <Setting Name="ProceedButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Proceed' and @index='2']</Value>
+    </Setting>
+    <Setting Name="CancelButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Cancel' and @index='1']</Value>
+    </Setting>
+    <Setting Name="TELCO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='1']</Value>
+    </Setting>
+    <Setting Name="AmountField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Amount' and @index='1']</Value>
+    </Setting>
+    <Setting Name="SelectedTelco" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

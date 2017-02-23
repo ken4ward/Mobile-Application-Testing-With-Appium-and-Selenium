@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Merchant" GeneratedClassName="MerchantSettings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Merchant" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/merchant_fab</Value>
+    </Setting>
+    <Setting Name="SelectedMerchant" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="SubscriptionButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0' and @text='Swift 4G Subscription']</Value>
+    </Setting>
+    <Setting Name="CustomerIDField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='1' and @text='Enter Customer ID']</Value>
+    </Setting>
+    <Setting Name="PaymentItemSelect" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='1']</Value>
+    </Setting>
+    <Setting Name="SelectedPaymentItem" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="NextButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Next' and @index='0']</Value>
+    </Setting>
+    <Setting Name="AmountField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Enter Amount' and @index='1']</Value>
+    </Setting>
+    <Setting Name="TransactionSummary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Swift Services' and @index='1']</Value>
+    </Setting>
+    <Setting Name="PayButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Pay' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SummaryElements" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

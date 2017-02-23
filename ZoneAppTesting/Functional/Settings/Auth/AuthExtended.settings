@@ -1,0 +1,144 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ZoneAppTesting.Functional.Settings.Auth" GeneratedClassName="AuthExtended">
+  <Profiles />
+  <Settings>
+    <Setting Name="LInearLayout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.LinearLayout[@index='0']</Value>
+    </Setting>
+    <Setting Name="DateOfBirth" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/dob</Value>
+    </Setting>
+    <Setting Name="LinearLayoutYear" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.LinearLayout[@index='0']</Value>
+    </Setting>
+    <Setting Name="DatePickerYear" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/date_picker_year</Value>
+    </Setting>
+    <Setting Name="AddMoreAccount" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/addMoreAcct</Value>
+    </Setting>
+    <Setting Name="AccountNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/input_beneficiary</Value>
+    </Setting>
+    <Setting Name="BankName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/bank_name</Value>
+    </Setting>
+    <Setting Name="SelectedBankName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Ecobank']</Value>
+    </Setting>
+    <Setting Name="AddAccountButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/action_send</Value>
+    </Setting>
+    <Setting Name="DoneButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/done_button</Value>
+    </Setting>
+    <Setting Name="SelectorHeader" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/selector_header</Value>
+    </Setting>
+    <Setting Name="SetupButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/setUp</Value>
+    </Setting>
+    <Setting Name="ExistingUser" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/detailsText</Value>
+    </Setting>
+    <Setting Name="ContinueButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Continue']</Value>
+    </Setting>
+    <Setting Name="LoginLink" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/have_an_acct</Value>
+    </Setting>
+    <Setting Name="LoginPhoneNumber" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@text='Phone number']</Value>
+    </Setting>
+    <Setting Name="LoginPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/password</Value>
+    </Setting>
+    <Setting Name="LoginButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/login</Value>
+    </Setting>
+    <Setting Name="SideBar" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageButton[@index='0']</Value>
+    </Setting>
+    <Setting Name="ChangePassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.CheckedTextView[@text='Change Password']</Value>
+    </Setting>
+    <Setting Name="OldPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_old_password</Value>
+    </Setting>
+    <Setting Name="NewPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_new_password</Value>
+    </Setting>
+    <Setting Name="ConfirmNewPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/text_confirm_password</Value>
+    </Setting>
+    <Setting Name="SaveNewPassowrdButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/btn_change</Value>
+    </Setting>
+    <Setting Name="LoginPasswordField" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='0']</Value>
+    </Setting>
+    <Setting Name="ForgotPasswordButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='I forgot My Password']</Value>
+    </Setting>
+    <Setting Name="ReEnterPasswordButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Renter Password']</Value>
+    </Setting>
+    <Setting Name="Setting" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.EditText[@index='0']</Value>
+    </Setting>
+    <Setting Name="AskSlide" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Ask for Money from Friends' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SlideIcons" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='0']</Value>
+    </Setting>
+    <Setting Name="PaySlide" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Pay for Goods with Ease' and @index='0']</Value>
+    </Setting>
+    <Setting Name="MerchantSlide" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Merchant Services' and @index='0']</Value>
+    </Setting>
+    <Setting Name="SendSlide" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Send Money to Friends' and @index='0']</Value>
+    </Setting>
+    <Setting Name="ZoneIcon" Type="System.String" Scope="User">
+      <Value Profile="(Default)">com.appzonegroup.dejavuandroid.zoneRevamp:id/zone_ic</Value>
+    </Setting>
+    <Setting Name="LabelPresentOnPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='0']</Value>
+    </Setting>
+    <Setting Name="GoogleSignup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Google' and @index='0']</Value>
+    </Setting>
+    <Setting Name="FacebookSignup" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@text='Facebook' and @index='2']</Value>
+    </Setting>
+    <Setting Name="ProfileImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.ImageView[@index='0']</Value>
+    </Setting>
+    <Setting Name="Camera" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Camera' and @index='1']</Value>
+    </Setting>
+    <Setting Name="Documents" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Documents' and @index='1']</Value>
+    </Setting>
+    <Setting Name="Gallery" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@text='Gallery' and @index='1']</Value>
+    </Setting>
+    <Setting Name="SelectProfileImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="SelectImage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.view.View[@index='0']</Value>
+    </Setting>
+    <Setting Name="AccountEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.TextView[@index='1']</Value>
+    </Setting>
+    <Setting Name="AllowAccessEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@index='1' and @text='Allow']</Value>
+    </Setting>
+    <Setting Name="DenyAccessEmail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//android.widget.Button[@index='0' and @text='Deny']</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
