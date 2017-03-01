@@ -80,6 +80,14 @@ namespace ZoneAppTesting.Functional.Constants.Auth
         public static String AccountEmail       = AuthExtended.Default.AccountEmail;
         public static String AllowAccessEmail   = AuthExtended.Default.AllowAccessEmail;
         public static String DenyAccessEmail    = AuthExtended.Default.DenyAccessEmail;
+        
+        public static String GoogleSignup        = AuthExtended.Default.GoogleSignup;
+        public static String FacebookSignup      = AuthExtended.Default.FacebookSignup;
+        public static String FacebookLoginButton = AuthExtended.Default.FacebookLoginButton;
+        public static String FacebookPassword    = AuthExtended.Default.FacebookPassword;
+        public static String FacebookUsername    = AuthExtended.Default.FacebookUsername;
+        public static String FBUsername = "ken4ward@yahoo.com";
+        public static String FBPassword = "f201115@Adea";
 
         public static String FirstName          = "Akehindegbegbon";
         public static String LastName           = "Adeoya";

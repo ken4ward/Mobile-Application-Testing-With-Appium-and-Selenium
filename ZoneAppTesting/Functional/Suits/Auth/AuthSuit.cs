@@ -63,13 +63,13 @@ namespace ZoneAppTesting.Functional.Suits.Auth
             SetDefaultAccount(AuthConstant.SelectorHeader, AuthConstant.SetupButton);
         }
 
-        public void SocialSignup(String SocialIcon, String DateFieldVisible, String FirstNameField, String LastNameField, String EmailField)
+        public void SocialSignup(String SocialIcon, String DateFieldVisible, String FirstNameField, String LastNameField, String EmailField, String SignupButton)
         {
             new AuthUtils(_driver).WaitPageLoadByXPath(DateFieldVisible);
             DateOfBirthAndGender();
             if (FirstNameField != String.Empty && LastNameField != String.Empty && EmailField != String.Empty)
             {
-                //ck=click the button to continue;
+                _driver.FindElementByXPath(SignupButton).Click();
             }
         }
 
@@ -124,7 +124,7 @@ namespace ZoneAppTesting.Functional.Suits.Auth
             {
                 _driver.FindElementByXPath(CheckForElement);
             }
-            catch (NoSuchElementException e)
+            catch (NoSuchElementException)
             {
                 return false;
             }

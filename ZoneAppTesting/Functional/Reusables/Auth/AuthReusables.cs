@@ -99,6 +99,20 @@ namespace ZoneAppTesting.Functional.Reusables.AuthReusables
             _driver.FindElementByXPath(AllowAccess).Click();
         }
 
+        public void FacebookSignup(String FacebookSignup, String FacebookUsername, String Username, String FacebookPassword, String Password, String FacebookloginButton)
+        {
+            _driver.FindElementByXPath(FacebookSignup).Click();
+            new AuthUtils(_driver).WaitPageLoadByXPath(FacebookUsername);
+
+            _driver.FindElement(By.XPath(FacebookUsername)).Clear();
+            _driver.FindElement(By.XPath(FacebookUsername)).SendKeys(Username);
+
+            _driver.FindElement(By.XPath(FacebookPassword)).Clear();
+            _driver.FindElement(By.XPath(FacebookPassword)).SendKeys(Password);
+
+            _driver.FindElement(By.XPath(FacebookloginButton)).Click();
+        }
+
         public void ProfileImageCamera(String ProfileImage, String Camera)
         {
             _driver.FindElementByXPath(ProfileImage).Click();

@@ -140,5 +140,14 @@
     <Setting Name="DenyAccessEmail" Type="System.String" Scope="User">
       <Value Profile="(Default)">//android.widget.Button[@index='0' and @text='Deny']</Value>
     </Setting>
+    <Setting Name="FacebookUsername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//*[@id="u_0_1"]/div[1]/div/input</Value>
+    </Setting>
+    <Setting Name="FacebookPassword" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//*[@id="u_0_2"]</Value>
+    </Setting>
+    <Setting Name="FacebookLoginButton" Type="System.String" Scope="User">
+      <Value Profile="(Default)">//*[@id="u_0_6"]</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

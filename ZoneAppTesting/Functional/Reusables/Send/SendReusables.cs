@@ -13,7 +13,7 @@ namespace ZoneAppTesting.Functional.Reusables.Send
     {
         Size Dimension;
         int StartPosition, EndPosition, StartFinalPosition;
-        String ReturnedNames, LoggedInUserNames, SelectedCard, LastIndexOfCard;
+        String ReturnedNames, LoggedInUserNames, SelectedCard;
         IWebElement SelectedElement;
         public static String[] Lines = { };
         public static String CardPAN = Resources.CardPAN;
@@ -136,9 +136,9 @@ namespace ZoneAppTesting.Functional.Reusables.Send
         public void PressCardPIN(String CardDigits)
         {
            AllElements = _driver.FindElementsByXPath(CardDigits);
-            foreach(var Elements in  AllElements)
+            foreach(char Characters in SendConstant.PINPress)
             {
-                foreach (char Characters in SendConstant.PINPress)
+                foreach (var Elements in AllElements)
                 { 
                      if (Characters.ToString().Equals(Elements.Text))
                      {

@@ -68,172 +68,172 @@ namespace AppZoneTestProjects.Functional.Runners.Login
                 driver = new AndroidDriver<IWebElement>(new Uri(AuthConstant.AppiumServerURL), DesiredCapability);
                 driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(20));
 
-                /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                {
-                    new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                    new MerchantReusables(driver).Merchant(MerchantConstant.Merchant);
-                    new MerchantReusables(driver).SelectMerchant(MerchantConstant.SelectedMerchant, MerchantConstant.RealMerchant);
-                    new MerchantReusables(driver).SubscriptionButton(MerchantConstant.SubscriptionButton);
-                    new MerchantReusables(driver).CustomerIDItem(MerchantConstant.CustomerIDField, MerchantConstant.CustomerID, MerchantConstant.PaymentItemSelect, MerchantConstant.SelectedPaymentItem, MerchantConstant.RealSelected, MerchantConstant.NextButton);
-                    new MerchantReusables(driver).SummaryAmount(MerchantConstant.AmountField, MerchantConstant.Amount, MerchantConstant.SummaryElements, MerchantConstant.PayButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-                }
-                    new MerchantReusables(driver).Merchant(MerchantConstant.Merchant);
-                    new MerchantReusables(driver).SelectMerchant(MerchantConstant.SelectedMerchant, MerchantConstant.RealMerchant);
-                    new MerchantReusables(driver).SubscriptionButton(MerchantConstant.SubscriptionButton);
-                    new MerchantReusables(driver).CustomerIDItem(MerchantConstant.CustomerIDField, MerchantConstant.CustomerID, MerchantConstant.PaymentItemSelect, MerchantConstant.SelectedPaymentItem, MerchantConstant.RealSelected, MerchantConstant.NextButton);
-                    new MerchantReusables(driver).SummaryAmount(MerchantConstant.AmountField, MerchantConstant.Amount, MerchantConstant.SummaryElements, MerchantConstant.PayButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                /* if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                 {
+                     new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                     new MerchantReusables(driver).Merchant(MerchantConstant.Merchant);
+                     new MerchantReusables(driver).SelectMerchant(MerchantConstant.SelectedMerchant, MerchantConstant.RealMerchant);
+                     new MerchantReusables(driver).SubscriptionButton(MerchantConstant.SubscriptionButton);
+                     new MerchantReusables(driver).CustomerIDItem(MerchantConstant.CustomerIDField, MerchantConstant.CustomerID, MerchantConstant.PaymentItemSelect, MerchantConstant.SelectedPaymentItem, MerchantConstant.RealSelected, MerchantConstant.NextButton);
+                     new MerchantReusables(driver).SummaryAmount(MerchantConstant.AmountField, MerchantConstant.Amount, MerchantConstant.SummaryElements, MerchantConstant.PayButton);
+                     new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                 }
+                     new MerchantReusables(driver).Merchant(MerchantConstant.Merchant);
+                     new MerchantReusables(driver).SelectMerchant(MerchantConstant.SelectedMerchant, MerchantConstant.RealMerchant);
+                     new MerchantReusables(driver).SubscriptionButton(MerchantConstant.SubscriptionButton);
+                     new MerchantReusables(driver).CustomerIDItem(MerchantConstant.CustomerIDField, MerchantConstant.CustomerID, MerchantConstant.PaymentItemSelect, MerchantConstant.SelectedPaymentItem, MerchantConstant.RealSelected, MerchantConstant.NextButton);
+                     new MerchantReusables(driver).SummaryAmount(MerchantConstant.AmountField, MerchantConstant.Amount, MerchantConstant.SummaryElements, MerchantConstant.PayButton);
+                     new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
 
-                //Topup via phone number
-                if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                {
-                    new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                    new TopupReusables(driver).Topup(TopupConstants.Topup);
-                    new TopupReusables(driver).NavigateTopupByPhoneNumber(TopupConstants.PhoneTopupImage, TopupConstants.PhoneTopupClick);
-                    new TopupReusables(driver).TopupByPhoneNumber(TopupConstants.PhoneNumberField, TopupConstants.PhoneNumber, TopupConstants.ProceedButton);
-                    new TopupReusables(driver).AmountTELCO(TopupConstants.AmountField, TopupConstants.Amount, TopupConstants.TELCO, TopupConstants.SelectedTelco, TopupConstants.SelectedTELCO, TopupConstants.TopupNextButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-                }
-                    new TopupReusables(driver).Topup(TopupConstants.Topup);
-                    new TopupReusables(driver).NavigateTopupByPhoneNumber(TopupConstants.PhoneTopupImage, TopupConstants.PhoneTopupClick);
-                    new TopupReusables(driver).TopupByPhoneNumber(TopupConstants.PhoneNumberField, TopupConstants.PhoneNumber, TopupConstants.ProceedButton);
-                    new TopupReusables(driver).AmountTELCO(TopupConstants.AmountField, TopupConstants.Amount, TopupConstants.TELCO, TopupConstants.SelectedTelco, TopupConstants.SelectedTELCO, TopupConstants.TopupNextButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-
-                //Topup non-zone user from 
-                if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                {
-                    new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                    new TopupReusables(driver).Topup(TopupConstants.Topup);
-                    new TopupReusables(driver).Search(TopupConstants.Search, TopupConstants.SearchField, TopupConstants.NonZoneUser);
-                    new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, TopupConstants.NonZoneUser);
-                    new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-                }
-                    new TopupReusables(driver).Topup(TopupConstants.Topup);
-                    new TopupReusables(driver).Search(TopupConstants.Search, TopupConstants.SearchField, TopupConstants.NonZoneUser);
-                    new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, TopupConstants.NonZoneUser);
-                    new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-
-                //Topup self from inside
+                 //Topup via phone number
                  if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
                  {
                      new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
                      new TopupReusables(driver).Topup(TopupConstants.Topup);
-                     new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
-                     new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
+                     new TopupReusables(driver).NavigateTopupByPhoneNumber(TopupConstants.PhoneTopupImage, TopupConstants.PhoneTopupClick);
+                     new TopupReusables(driver).TopupByPhoneNumber(TopupConstants.PhoneNumberField, TopupConstants.PhoneNumber, TopupConstants.ProceedButton);
+                     new TopupReusables(driver).AmountTELCO(TopupConstants.AmountField, TopupConstants.Amount, TopupConstants.TELCO, TopupConstants.SelectedTelco, TopupConstants.SelectedTELCO, TopupConstants.TopupNextButton);
                      new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
                  }
-                 new TopupReusables(driver).Topup(TopupConstants.Topup);
-                 new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
-                 new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
-                 new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                     new TopupReusables(driver).Topup(TopupConstants.Topup);
+                     new TopupReusables(driver).NavigateTopupByPhoneNumber(TopupConstants.PhoneTopupImage, TopupConstants.PhoneTopupClick);
+                     new TopupReusables(driver).TopupByPhoneNumber(TopupConstants.PhoneNumberField, TopupConstants.PhoneNumber, TopupConstants.ProceedButton);
+                     new TopupReusables(driver).AmountTELCO(TopupConstants.AmountField, TopupConstants.Amount, TopupConstants.TELCO, TopupConstants.SelectedTelco, TopupConstants.SelectedTELCO, TopupConstants.TopupNextButton);
+                     new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
 
-                 //Topup zone user from inside
+                 //Topup non-zone user from 
                  if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
                  {
                      new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
                      new TopupReusables(driver).Topup(TopupConstants.Topup);
-                     new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                     new TopupReusables(driver).Search(TopupConstants.Search, TopupConstants.SearchField, TopupConstants.NonZoneUser);
+                     new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, TopupConstants.NonZoneUser);
                      new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
                      new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
                  }
                      new TopupReusables(driver).Topup(TopupConstants.Topup);
-                     new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                     new TopupReusables(driver).Search(TopupConstants.Search, TopupConstants.SearchField, TopupConstants.NonZoneUser);
+                     new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, TopupConstants.NonZoneUser);
                      new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
                      new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
 
-
-                 //Topup quick launch zone user
+                 //Topup self from inside
                   if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
                   {
                       new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                      new TopupReusables(driver).TopQuickLaunch(TopupConstants.TopupQuickLaunch);
-                      new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                      new TopupReusables(driver).Topup(TopupConstants.Topup);
+                      new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
+                      new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
                       new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
                   }
-                      new TopupReusables(driver).TopQuickLaunch(TopupConstants.TopupQuickLaunch);
+                  new TopupReusables(driver).Topup(TopupConstants.Topup);
+                  new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
+                  new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
+                  new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+
+                  //Topup zone user from inside
+                  if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                  {
+                      new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                      new TopupReusables(driver).Topup(TopupConstants.Topup);
                       new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                      new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
+                      new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                  }
+                      new TopupReusables(driver).Topup(TopupConstants.Topup);
+                      new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                      new TopupReusables(driver).TopupPayment(TopupConstants.TopupAmount, TopupConstants.Amount, TopupConstants.TopupNextButton);
                       new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
 
-                 //ASk zone user from quick launch
+
+                  //Topup quick launch zone user
                    if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
                    {
                        new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                       new AskReusables(driver).AskQuickLaunch(AskConstants.AskQuickLaunch);
+                       new TopupReusables(driver).TopQuickLaunch(TopupConstants.TopupQuickLaunch);
                        new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                       new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
-                           AskConstants.AskButtonGo);
-
+                       new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
                    }
-                       new AskReusables(driver).AskQuickLaunch(AskConstants.AskQuickLaunch);
+                       new TopupReusables(driver).TopQuickLaunch(TopupConstants.TopupQuickLaunch);
                        new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                       new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
-                           AskConstants.AskButtonGo);
+                       new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
 
-                     //Ask zone user global
-                   /* if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                    {
-                        new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                        new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, SendConstant.SendToUserZoneContact);
-                        new AskReusables(driver).Ask(AskConstants.AskFromInside);
-                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
-                            AskConstants.AskButtonGo);
-                    }
-                        new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, SendConstant.SendToUserZoneContact);
-                        new AskReusables(driver).Ask(AskConstants.AskFromInside);
-                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
-                            AskConstants.AskButtonGo);
-
-                    //Ask from universal 
-                    /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                    {
-                        new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                        new AskReusables(driver).Ask(AskConstants.AskButton);
-                        new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description, 
-                            AskConstants.AskButtonGo);
-                    }
-                        new AskReusables(driver).Ask(AskConstants.AskButton);
-                        new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
-                            AskConstants.AskButtonGo);
-
-                    // Send to zone contact via quick launch
+                  //ASk zone user from quick launch
                     if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
                     {
                         new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                        new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                        new AskReusables(driver).AskQuickLaunch(AskConstants.AskQuickLaunch);
                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                        new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
-                        new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
-                        new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
+                            AskConstants.AskButtonGo);
 
-                }
-                        new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                    }
+                        new AskReusables(driver).AskQuickLaunch(AskConstants.AskQuickLaunch);
                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
-                        new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
-                        new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
-                        new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                        new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
+                            AskConstants.AskButtonGo);
 
-                //Quick Launch send to self
-                /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                {
-                    new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                    new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
-                    new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
-                    new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
-                    new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-                }
-                    new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
-                    new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
-                    new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
-                    new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
-                    new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
-                    */
+                      //Ask zone user global
+                    /* if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                     {
+                         new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                         new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, SendConstant.SendToUserZoneContact);
+                         new AskReusables(driver).Ask(AskConstants.AskFromInside);
+                         new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
+                             AskConstants.AskButtonGo);
+                     }
+                         new AskReusables(driver).GlobalContactList(AskConstants.GlobalContactList, SendConstant.SendToUserZoneContact);
+                         new AskReusables(driver).Ask(AskConstants.AskFromInside);
+                         new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
+                             AskConstants.AskButtonGo);
+
+                     //Ask from universal 
+                     /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                     {
+                         new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                         new AskReusables(driver).Ask(AskConstants.AskButton);
+                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                         new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description, 
+                             AskConstants.AskButtonGo);
+                     }
+                         new AskReusables(driver).Ask(AskConstants.AskButton);
+                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                         new AskReusables(driver).UniversalAsk(AskConstants.AskAmount, AskConstants.Amount, AskConstants.AskDescription, AskConstants.Description,
+                             AskConstants.AskButtonGo);
+
+                     // Send to zone contact via quick launch
+                     if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                     {
+                         new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                         new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                         new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
+                         new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
+                         new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+
+                 }
+                         new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                         new SendReusables(driver).SendToZoneContact(SendConstant.SendToZoneContact, SendConstant.SendToUserZoneContact);
+                         new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
+                         new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
+                         new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+
+                 //Quick Launch send to self
+                 /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+                 {
+                     new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                     new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                     new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
+                     new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
+                     new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
+                     new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                 }
+                     new SendReusables(driver).SendQuickLaunch(SendConstant.SendQuickLaunch);
+                     new SendReusables(driver).ValidateUserExistOnContact(SendConstant.ContactListNames);
+                     new SendReusables(driver).SendProcessFlow(SendConstant.SendAmount, SendConstant.Amount, SendConstant.SendRemarks, SendConstant.Remarks, SendConstant.SendNextButton);
+                     new SendReusables(driver).SendSummaryPage(SendConstant.SummaryPageFields, SendConstant.SendSummaryButton);
+                     new SendReusables(driver).CountCardNumbers(SendConstant.NumberOfCards, SendConstant.AddCardButton, SendConstant.CardPAN, SendConstant.PANLast4Digits, SendConstant.CardDigits);
+                     */
 
                 //this has not been finished
                 /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
@@ -365,38 +365,62 @@ namespace AppZoneTestProjects.Functional.Runners.Login
                     new AuthReusables(driver).Login(AuthConstant.LoginLink, AuthConstant.LoginPhoneNumber, AuthConstant.PhoneNumber, AuthConstant.LoginPassword, 
                     AuthConstant.Password, AuthConstant.LoginButton);*/
 
-                    //Registration test suits
-                    if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.InviteCodeField) == true )
+                    if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.InviteCodeField) == true)
                     {
                         new Base(driver).InviteCodeRun(AuthConstant.MyInviteCode, AuthConstant.VerifyInviteButton);
                         new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
                         new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
-                        new AuthReusables(driver).ProfileImageGallery(AuthConstant.ProfileImage, AuthConstant.Gallery, AuthConstant.SelectImage);
-                        //new AuthReusables(driver).ProfileImageCamera(AuthConstant.ProfileImage, AuthConstant.Camera);
-                        new AuthSuit(driver).ProfilePageRegistration(AuthConstant.FirstName, AuthConstant.LastName, AuthConstant.Email);
+                        new AuthReusables(driver).FacebookSignup(AuthConstant.FacebookSignup, AuthConstant.FacebookUsername, AuthConstant.FBUsername, AuthConstant.FacebookPassword, AuthConstant.FBPassword, AuthConstant.FacebookLoginButton);
+                        new AuthSuit(driver).DateOfBirthAndGender();
                     }
-                    else
-                    {
                         new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
                         new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
-                        new AuthReusables(driver).ProfileImageGallery(AuthConstant.ProfileImage, AuthConstant.Gallery, AuthConstant.SelectImage);
-                        //new AuthReusables(driver).ProfileImageCamera(AuthConstant.ProfileImage, AuthConstant.Camera);
-                        new AuthSuit(driver).ProfilePageRegistration(AuthConstant.FirstName, AuthConstant.LastName, AuthConstant.Email);
-                    }
-                  //Test suit to Add Card
-                  /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
-                   {
-                       new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
-                       driver.FindElement(By.Id(AuthConstant.SideBar)).Click();
-                       new CardSuit(driver).AddCards(CardsConstant.CardNumber, CardsConstant.ZoneCardNumber,
-                       CardsConstant.CardCCV, CardsConstant.ZoneCVV, CardsConstant.CardPIN, CardsConstant.ZonePIN);
-                   }
-                   else
-                   {
-                       driver.FindElement(By.XPath(AuthConstant.SideBar)).Click();
-                       new CardSuit(driver).AddCards(CardsConstant.CardNumber, CardsConstant.ZoneCardNumber,
-                       CardsConstant.CardCCV, CardsConstant.ZoneCVV, CardsConstant.CardPIN, CardsConstant.ZonePIN);
-                   }*/
+                        new AuthReusables(driver).FacebookSignup(AuthConstant.FacebookSignup, AuthConstant.FacebookUsername, AuthConstant.FBUsername, AuthConstant.FacebookPassword, AuthConstant.FBPassword, AuthConstant.FacebookLoginButton);
+                        new AuthSuit(driver).DateOfBirthAndGender();
+
+                /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.InviteCodeField) == true)
+                {
+                    new Base(driver).InviteCodeRun(AuthConstant.MyInviteCode, AuthConstant.VerifyInviteButton);
+                    new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
+                    new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
+                    new AuthReusables(driver).GoogleSignup(AuthConstant.GoogleSignup, AuthConstant.AccountEmail, AuthConstant.Email, AuthConstant.AllowAccessEmail);
+                    new AuthSuit(driver).DateOfBirthAndGender();
+                }
+                new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
+                new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
+                new AuthReusables(driver).GoogleSignup(AuthConstant.GoogleSignup, AuthConstant.AccountEmail, AuthConstant.Email, AuthConstant.AllowAccessEmail);
+                new AuthSuit(driver).DateOfBirthAndGender();
+
+            //Registration test suits app registration //
+            if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.InviteCodeField) == true )
+                {
+                    new Base(driver).InviteCodeRun(AuthConstant.MyInviteCode, AuthConstant.VerifyInviteButton);
+                    new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
+                    new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
+                    new AuthReusables(driver).ProfileImageGallery(AuthConstant.ProfileImage, AuthConstant.Gallery, AuthConstant.SelectImage);
+                    new AuthSuit(driver).ProfilePageRegistration(AuthConstant.FirstName, AuthConstant.LastName, AuthConstant.Email);
+                }
+                else
+                {
+                    new Base(driver).GetStartedButton(AuthConstant.GetStartedButton, AuthConstant.ZoneIcon, AuthConstant.LabelPresentOnPage);
+                    new AuthReusables(driver).ZoneAuthentication(AuthConstant.PhoneNumber, AuthConstant.Password, AuthConstant.VerifyPassword);
+                    new AuthReusables(driver).ProfileImageGallery(AuthConstant.ProfileImage, AuthConstant.Gallery, AuthConstant.SelectImage);
+                    new AuthSuit(driver).ProfilePageRegistration(AuthConstant.FirstName, AuthConstant.LastName, AuthConstant.Email);
+                }
+              //Test suit to Add Card
+              /*if (new AuthSuit(driver).CheckIfElementExist(AuthConstant.LoginPasswordField) == true)
+               {
+                   new AuthReusables(driver).ReLogin(AuthConstant.LoginPasswordField, AuthConstant.NewPasswordText, AuthConstant.LoginButton);
+                   driver.FindElement(By.Id(AuthConstant.SideBar)).Click();
+                   new CardSuit(driver).AddCards(CardsConstant.CardNumber, CardsConstant.ZoneCardNumber,
+                   CardsConstant.CardCCV, CardsConstant.ZoneCVV, CardsConstant.CardPIN, CardsConstant.ZonePIN);
+               }
+               else
+               {
+                   driver.FindElement(By.XPath(AuthConstant.SideBar)).Click();
+                   new CardSuit(driver).AddCards(CardsConstant.CardNumber, CardsConstant.ZoneCardNumber,
+                   CardsConstant.CardCCV, CardsConstant.ZoneCVV, CardsConstant.CardPIN, CardsConstant.ZonePIN);
+               }*/
             }
 
             catch (Exception e)

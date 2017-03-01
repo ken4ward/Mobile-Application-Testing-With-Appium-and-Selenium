@@ -574,5 +574,41 @@ namespace ZoneAppTesting.Functional.Settings.Auth {
                 this["DenyAccessEmail"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//*[@id=\"u_0_1\"]/div[1]/div/input")]
+        public string FacebookUsername {
+            get {
+                return ((string)(this["FacebookUsername"]));
+            }
+            set {
+                this["FacebookUsername"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//*[@id=\"u_0_2\"]")]
+        public string FacebookPassword {
+            get {
+                return ((string)(this["FacebookPassword"]));
+            }
+            set {
+                this["FacebookPassword"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("//*[@id=\"u_0_6\"]")]
+        public string FacebookLoginButton {
+            get {
+                return ((string)(this["FacebookLoginButton"]));
+            }
+            set {
+                this["FacebookLoginButton"] = value;
+            }
+        }
     }
 }
